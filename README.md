@@ -1,5 +1,5 @@
 # CSharp - Exercises
-This repository contains a collection of beginner level C# exercises. Each file focuses on concept such as arrays, loops, or methods. The purpose is to practice fundamental skills and build fluency in the C# programming language.
+This repository contains a collection of beginner level C# exercises. Each file focuses on concepts such as arrays, loops and methods. The purpose is to practice fundamental skills and build fluency in the C# programming language.
 
 ## Array
 
@@ -97,20 +97,71 @@ This part randomly selects p positions within the array, asks the user to input 
 
 ## Loop
 
+### Loop 1 - Printing numbers divisible by 3 or 5 in the range of 1 to 100
+
+I practiced:
+- writing concise control flow for targeted output,
+- efficient filtering of values using conditions.
+
+Code Snippet:
+```C#
+for (int i = 1; i <= 100; i++)
+{
+    if (i % 3 == 0 || i % 5 == 0)
+        Console.WriteLine(i);
+}
+```
+The condition i % 3 == 0 || i % 5 == 0 evaluates to true for values divisible by either number.
 
 
+### Loop 2 - Verifying if value provided by a user is a positive number
+
+I practiced:
+- implementing a while loop for repeated input,
+- guarding against invalid or unexpected data.
+
+Code Snippet:
+```C#
+while ((!int.TryParse(input, out int result) || (result <= 0)))
+{
+    Console.WriteLine("Wrong input. Try with a positive number");
+    input = Console.ReadLine();
+}
+```
+The combined condition (!TryParse || result <= 0) filters out both non-numeric and negative/zero inputs.
 
 
+### Loop 3 - Calculating the volume of a rectangle based on the dimensions provided by a user
+
+I practiced:
+- sequential user input with validation,
+- reuse of input validation logic for multiple fields,
+- output formatting with interpolated strings.
+
+Code Snippet:
+```C#
+Console.WriteLine($"The volume of a rectangle based on the provided dimensions: {int_a * int_b * int_c}");
+```
+Volume is calculated as length × width × height and displayed in a readable message.
 
 
+### Loop 4 - Sum of the first 'n' even numbers, where 'n' value is provided by a user
+
+I practiced:
+- Combining input validation with multiple conditions (positivity + parity),
+- generating and summing a specific numeric pattern.
+
+Code Snippet:
+```C#
+for (int i = 0; i < int_n; i++)
+{
+    sum += 2 * i;
+}
+```
+The program validates the input to ensure it's both positive and even before proceeding.
 
 
-
-
-
-
-
-
+### Loop 5 - 
 
 
 
