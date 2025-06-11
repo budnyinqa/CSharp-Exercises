@@ -208,4 +208,6 @@ Program does not require the user to know how many numbers they want to enter in
 
 ## Methods
 
-
+### Methods 1.1 - Create a one-dimensional array with 20 elements. Fill it with random int values ranging from 0 to 100.
+Print the contents of the array to the console. Then, fill the array with ones. Print it again.
+Use a method that prints the contents of the array.
