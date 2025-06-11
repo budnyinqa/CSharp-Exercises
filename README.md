@@ -208,6 +208,119 @@ Program does not require the user to know how many numbers they want to enter in
 
 ## Methods
 
-### Methods 1.1 - Create a one-dimensional array with 20 elements. Fill it with random int values ranging from 0 to 100.
-Print the contents of the array to the console. Then, fill the array with ones. Print it again.
-Use a method that prints the contents of the array.
+### Methods 1.1 - Create a one-dimensional array with 20 elements. Fill it with random int values ranging from 0 to 100. Print the contents of the array to the console. Then, fill the array with ones. Print it again. Use a method that prints the contents of the array.
+
+I practiced:
+- creating and using methods for code reusability.
+
+Code Snippet:
+```C#
+static void print_array(int[] array)
+{
+    for (int i = 0; i < 20; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+}
+```
+The method print_array() demonstrates code separation and reusability. The array is printed before and after being overwritten.
+
+
+### Methods 1.2 - Solve the previous task by printing only every second value to the console.
+
+I practiced:
+- overloading methods with optional parameters,
+- using step-based iteration in loops,
+- improved modular code structure.
+
+Code Snippet:
+```C#
+static void print_array(int[] array, int step = 1)
+{
+    for (int i = 0; i < array.Length; i += step)
+    {
+        Console.Write(array[i] + " ");
+    }
+}
+```
+When called as print_array(array, 2), only every second value is printed — this pattern is useful for data sampling or simplified output.
+
+
+### Methods 2 - Declare two variables of type int and assign them values 10 and 20. Create a method that swaps the values of the two variables. Print the values of the variables before and after calling the method. Pass the parameters by value and reference.
+
+I practiced:
+- difference between pass by value a pass by reference,
+- creating and calling methods using specific parameters,
+- swapping operations on variables.
+
+Code Snippet:
+- swap by value – no actual change:
+```C#
+static void Swap_by_value(int x, int y)
+{
+    int temp = x;
+    x = y;
+    y = temp;
+    Console.WriteLine($"Values after calling the 'Swap_by_value' method: x={x}, y={y}");
+}
+```
+Only local copies x and y are swapped — the original values remain unchanged outside the method.
+
+- swap by reference - real change:
+```C#
+static void Swap_by_reference(ref int x, ref int y)
+{
+    int temp = x;
+    x = y;
+    y = temp;
+}
+```
+The values of x and y are actually swapped in the main method since they are passed by reference.
+
+
+### Methods 3 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
