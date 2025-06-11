@@ -161,18 +161,51 @@ for (int i = 0; i < int_n; i++)
 The program validates the input to ensure it's both positive and even before proceeding.
 
 
-### Loop 5 - 
+### Loop 5 - Calculating the arithmetic mean of 'n' numbers provided by the user
+
+I practiced:
+- input validation for both integer (n) and floating-point values,
+- handling incorrect input gracefully inside a loop.
+
+Code Snippet:
+```C#
+while (i <= int_n)
+{
+    Console.WriteLine($"Enter number {i}:");
+    string input = Console.ReadLine();
+    if (double.TryParse(input, out double number))
+    {
+        i++;
+        sum += number;
+    }
+    else
+    {
+        Console.WriteLine("You entered invalid number. Please try again");
+    }
+}
+```
+Input collection uses a while loop with a counter to ensure exactly n valid numbers are entered.
+
+
+### Loop 6 - Calculating arithmetical mean of values provided by a user
+
+I practiced:
+- infinite loop with user-defined exit condition,
+- dynamic accumulation (sum and count) without knowing input size beforehand,
+- handling edge cases (e.g., zero valid inputs),
+- case-insensitive string comparison.
+
+Code Snippet:
+```C#
+if (input.ToLower() == "end")
+{
+    break;
+}
+```
+Program does not require the user to know how many numbers they want to enter in advance. Keyword "end" stops input and triggers calculation.
 
 
 
-
-
-
-
-
-
-
-
-
+## Methods
 
 
