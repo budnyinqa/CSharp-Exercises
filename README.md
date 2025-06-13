@@ -278,10 +278,19 @@ static void Swap_by_reference(ref int x, ref int y)
 The values of x and y are actually swapped in the main method since they are passed by reference.
 
 
-### Methods 3 - 
+### Methods 3 - Create a method that takes a double value as a parameter and returns the rounded-up value as an int.
 
+I practiced:
+- Type casting (double → int).
 
-
+```C#
+static int double_round_to_int(double x)
+{
+    int y = (int)Math.Ceiling(x);
+    return y;
+}
+```
+Math.Ceiling(x) returns the smallest whole number that is greater than or equal to x (as a double). (int) casts the double result to int by dropping the decimal part.
 
 
 
