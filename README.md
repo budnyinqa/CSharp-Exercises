@@ -1,4 +1,4 @@
-# CSharp - Exercisess
+# CSharp - Exercises
 This repository contains a collection of beginner level C# exercises. Each file focuses on concepts such as arrays, loops and methods. The purpose is to practice fundamental skills and build fluency in the C# programming language.
 
 ## Array
